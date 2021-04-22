@@ -52,12 +52,12 @@ $sudo nano /etc/systemd/system/graylog2thehive4.service
 
 Make sure the service is enabled on startup using the following commands :
 ```
-sudo systemctl daemon-reload
-sudo systemctl enable graylog2thehive4.service
+$sudo systemctl daemon-reload
+$sudo systemctl enable graylog2thehive4.service
 ```
 Start the service using the following command :
 ```
-sudo systemctl start graylog2thehive4.service
+$sudo systemctl start graylog2thehive4.service
 ```
 ## Create a new notification in Graylog
 In Graylog, navigate to `Alerts > Notifications` and click on `Create Notification`.
