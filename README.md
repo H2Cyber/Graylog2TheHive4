@@ -64,7 +64,7 @@ In Graylog, navigate to `Alerts > Notifications` and click on `Create Notificati
 
 Choose a Title and a Description for the new Notification, then select the notification type `HTTP Notification`.
 
-The URL should respect the following format : http://THEHIVE-IP:5000/webhook (for example: http://10.10.10.100:5000/webhook).
+The URL should respect the following format : http://THEHIVE-IP:5000/webhook (for example: http://10.10.10.100:5000/webhook), and shall be added to Graylog's URL Whitelist.
 
 Click on `Execute Test Notification`. A new Alert should appear in TheHive. 
 
