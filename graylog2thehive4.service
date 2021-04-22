@@ -1,0 +1,18 @@
+[Unit]
+Description=graylog2thehive4
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/opt/graylog2thehive4
+Environment=FLASK_APP=graylog2thehive4.py
+ExecStart=python3 -m flask run --host=0.0.0.0
+
+# Connects standard output to journal
+StandardOutput=journal
+
+# Connects standard error to journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
